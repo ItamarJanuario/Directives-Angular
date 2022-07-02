@@ -1,0 +1,17 @@
+.produtos {
+    display: flex;
+}
+
+img {
+    margin-top: 30px;
+    height: 170px;
+    width: 300px;
+}
+
+.em-estoque{
+    color: green;
+}
+
+.falta-estoque{
+    color: red;
+}

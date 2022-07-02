@@ -1,0 +1,10 @@
+<div class="produtos" *ngFor="let produto of produtos">
+    <div class="card-product" *ngIf="produto.disponivel">
+        <img src="{{produto.imagem}}" width="250px" height="250px">
+        <p>Descrição do produto: {{ produto.descricao }}</p>
+        <p>Quantidade: {{ produto.quantidade }} </p>
+        <br>
+        <button (click)="comprar()" [ngClass]="{ 'em-estoque': produto.disponivel, 'falta-estoque': !produto.disponivel }" >Comprar</button>
+    </div>
+</div>
+
